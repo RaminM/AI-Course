@@ -1,4 +1,4 @@
-def BFS(subway, start, end):
+def BFS(graph, start, end):
     # the nodes that have been expanded
     expandedList = []
     #the list of expanded paths (Queue)
@@ -13,7 +13,7 @@ def BFS(subway, start, end):
         #Check if the node has been expanded before 
         if endNode not in expandedList:
             #next stations (from the dictionary)
-            nextStations = subway[endNode]
+            nextStations = graph[endNode]
 
             for station in nextStations:
                 #make temporary path
