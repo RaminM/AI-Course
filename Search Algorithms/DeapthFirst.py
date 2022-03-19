@@ -6,4 +6,5 @@ class DepthFirstSearch:
     
     def calculate_dfs(self):
         print("This is a test")
+        print("test2")
         pass
